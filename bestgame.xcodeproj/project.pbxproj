@@ -1544,6 +1544,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Developer;
+				TargetAttributes = {
+					0C0660FE1639AC0200A60305 = {
+						DevelopmentTeam = 8G9SJKMB6B;
+					};
+				};
 			};
 			buildConfigurationList = 0C0660F91639AC0200A60305 /* Build configuration list for PBXProject "bestgame" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1947,12 +1952,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Doe Pics Hit Inc";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Doe Pics Hit Inc";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/bestgame/libs/**"
+					"$(SRCROOT)/bestgame/libs/**",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1961,9 +1966,7 @@
 				"HEADER_SEARCH_PATHS[arch=*]" = "\"bestgame/libs/kazmath/include\"";
 				INFOPLIST_FILE = bestgame/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(SRCROOT)/bestgame/libs/**"
-				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/bestgame/libs/**";
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-lz",
@@ -1971,8 +1974,8 @@
 					"-dead_strip",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "ab5877bd-5321-4f93-8c56-755c1b69f9e7";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "ab5877bd-5321-4f93-8c56-755c1b69f9e7";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1982,11 +1985,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Doe Pics Hit Inc";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/bestgame/libs/**"
+					"$(SRCROOT)/bestgame/libs/**",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = bestgame/Prefix.pch;
@@ -1994,9 +1997,7 @@
 				"HEADER_SEARCH_PATHS[arch=*]" = "\"bestgame/libs/kazmath/include\"";
 				INFOPLIST_FILE = bestgame/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(SRCROOT)/bestgame/libs/**"
-				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/bestgame/libs/**";
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-lz",
@@ -2004,7 +2005,7 @@
 					"-dead_strip",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "ab5877bd-5321-4f93-8c56-755c1b69f9e7";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
